@@ -48,7 +48,6 @@
 }
 
 .introducao {
-    //border: solid;
     margin-top: 7vw;
     margin-left: 10%;
     width: 90%;
@@ -92,7 +91,6 @@
 .botoes {
     padding-top: -9rem;
     width: 24vw;
-    //border: solid red;
     display: flex;
     gap: 4rem;
 }
@@ -106,7 +104,6 @@
     background-color: #16A34A;
     color: #ffffff;
     height: 4rem;
-    //width: 12rem;
     padding-left: 2rem;
     padding-right: 4.5rem;
     position: relative;
@@ -145,7 +142,6 @@
 }
 
 .dados-h1 {
-    //border: solid red;
     background-color: #F3F5F8;
     display: flex;
     flex-direction: row;
@@ -240,7 +236,6 @@
     display: flex;
 }
 
-
 .doador-explic p {
     font-size: 16px;
     font-weight: 400;
@@ -258,7 +253,6 @@
     padding-left: 2rem;
     padding-top: 1.5rem;
 }
-
 
 .topicos {
     margin-bottom: 1rem;
@@ -391,7 +385,7 @@ p.explic {
     }
 }
 
-.avalia{
+.avalia {
     margin-bottom: 5rem;
 }
 
@@ -418,7 +412,6 @@ p.explic {
     margin-left: 10%;
     margin-right: 10%;
     padding-top: 6rem;
-
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -457,7 +450,6 @@ p.explic {
     color: #111;
 }
 
-
 .icon-nome {
     display: flex;
     align-items: center;
@@ -495,14 +487,14 @@ h5.role {
     margin: 0;
 }
 
-.juntar{
+.juntar {
     background-color: #F3F5F8;
     text-align: center;
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
 
-.juntar h1{
+.juntar h1 {
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
     color: #000000;
@@ -510,30 +502,31 @@ h5.role {
     padding-bottom: 1.5rem;
 }
 
-.juntar h3{
+.juntar h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    color:#000000;
+    color: #000000;
     font-size: 25px;
     padding-left: 30%;
     padding-right: 30%;
     padding-bottom: 3rem;
 }
 
-.botoes-junt{
+.botoes-junt {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-button.comec{
+button.comec {
     border-style: none;
     background-color: #16A34A;
     height: 3rem;
     width: 12rem;
     border: 1px;
     border-radius: 5px;
-    p{
+
+    p {
         font-size: 16px;
         color: white;
         font-family: 'Poppins', sans-serif;
@@ -541,14 +534,15 @@ button.comec{
     }
 }
 
-button.saber{
+button.saber {
     border-style: none;
     background-color: #F3F5F8;
     border: 1px solid #16A34A;
     height: 3rem;
     width: 10rem;
     border-radius: 5px;
-    p{
+
+    p {
         font-size: 16px;
         color: #16A34A;
         font-family: 'Poppins', sans-serif;
@@ -556,20 +550,21 @@ button.saber{
     }
 }
 
-.rodape{
+.rodape {
     background-color: #1F2937;
     display: flex;
     padding-bottom: 3rem;
 }
 
-.info-rodape{
+.info-rodape {
     padding-top: 3.5rem;
     width: 25%;
 }
 
-.info{
+.info {
     padding-left: 2rem;
-    p{
+
+    p {
         padding-top: 0.5rem;
         font-family: 'Poppins', sans-serif;
         font-size: 16px;
@@ -577,7 +572,8 @@ button.saber{
         color: #9CA3AF;
         padding-right: 30%;
     }
-    h1{
+
+    h1 {
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
         color: #FFFFFF;
@@ -585,26 +581,96 @@ button.saber{
     }
 }
 
-.redes-sociais{
+.redes-sociais {
     padding-top: 1rem;
     display: flex;
     gap: 1.3rem;
 }
 
-.direitos{
+.direitos {
     background-color: #1F2937;
 }
 
-.caixa-direitos{
+.caixa-direitos {
     text-align: center;
     border-top: solid 1px #4B5563;
     margin-left: 2rem;
     margin-right: 2rem;
-    p{
+
+    p {
         color: #9CA3AF;
         font-size: 16px;
         font-weight: 400;
     }
+
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .menu {
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
+
+    .introducao {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10%;
+    }
+
+    .texto-img {
+        flex-direction: row;
+        text-align: left;
+        align-items: flex-start;
+
+        h1{
+            font-size: 24px;
+        }
+        .textos {
+            max-width: 100%;
+            padding-bottom: 2rem;
+        }
+
+        img {
+            width: 40%;
+        }
+    }
+
+    .botoes {
+        flex-direction: row;
+        width: auto;
+        gap: 2rem;
+    }
+
+    .card-explic {
+        flex-direction: column;
+        gap: 1.5rem;
+
+        .doador-explic,
+        .adquir-explic {
+            width: 100%;
+        }
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+
+        .card-produto {
+            width: 80%;
+            margin-left: 0;
+        }
+    }
+
+    .botoes-junt {
+        flex-direction: column;
+        align-items: center;
+    }
 }
